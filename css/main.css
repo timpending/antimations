@@ -1,0 +1,151 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: black;
+    font-family: 'Baron Neue', 'Raleway', sans-serif;
+}
+
+header { 
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 4rem;
+}
+
+/*h1 {
+    color: gold;
+} */
+
+.container {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 80vw;
+    height: auto;
+    background: lightcyan;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    padding: 1rem 1.5rem;
+    width: 100%;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    display: inline-block;
+    width: auto;
+    border-radius: 0.4rem;
+    font-weight: 300;
+    /*transition-property: padding, color;
+    transition-duration: 0.4s;
+    transition-delay: 0.2s, 0s;*/
+
+    transition: 
+        padding 0.4s ease-in-out,
+        color 0.4s 0.2s ease;
+} 
+/* transitions need to find a middle value 
+to be animat-able, and thus transition-able */
+
+.btn:hover {
+    cursor: pointer;
+    padding: 1.2rem 1.75rem;
+}
+.btn-primary {
+    background-color: lightgreen;
+    margin: auto 1rem;
+}
+.btn-primary:hover {
+    color: gold; 
+    background-color: darkgreen;
+}
+
+.btn-secondary {
+    background-color: lightskyblue    ;
+}
+
+
+/*** Gradient Section ***/
+.gradient {
+    color: #333;
+    background: #C02425;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 200%;
+    background-position: 15%;
+
+    transition: 
+    background-size 1s ease-in-out,
+    background-position 1s ease-in-out,
+    color 0.8s 0.2s ease-out;
+}
+
+.gradient:hover {
+    color: #F0CB35;  /* fallback for old browsers */
+    background-position: 85%;   
+}
+
+/*** Forest Section ***/
+.forest {
+    padding: 0;
+    color: white;
+    height: 100%;
+    max-height: 200px;
+    border-radius: 15px;
+    background-image: url('https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=85740266a52ea733187e9775fdf8d2d5&auto=format&fit=crop&w=1400&q=60');
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+    transition: 
+    background-size 1s ease-in-out,
+    background-position 1s ease-in-out,
+    color 0.8s 0.2s ease-out;
+}
+.overlay {
+    padding: 2rem 10rem;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    
+    transition: 
+    opacity 1s ease-in-out;
+}
+
+.forest:hover {
+    background-size: 200%;
+    background-position: 0% 50%;
+}
+
+.forest:hover .overlay{ 
+    opacity: 1;    
+}
+
+.forest-text {
+    line-height: 1.2rem;
+    margin-top: 1rem;
+}
+
+
+
+
