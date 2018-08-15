@@ -1,0 +1,161 @@
+
+/*** Gradient Section ***/
+.gradient {
+    color: #333;
+    background: #C02425;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 200%;
+    background-position: 15%;
+
+    transition: 
+    background-size 1s ease-in-out,
+    background-position 1s ease-in-out,
+    color 0.8s 0.2s ease-out;
+}
+
+.gradient:hover {
+    color: #F0CB35;  /* fallback for old browsers */
+    background-position: 85%;   
+}
+
+/*** Forest Section ***/
+.forest {
+    padding: 0;
+    color: white;
+    height: 100%;
+    max-height: 200px;
+    background-image: url('https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=85740266a52ea733187e9775fdf8d2d5&auto=format&fit=crop&w=1400&q=60');
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+    transition: 
+    background-size 1s ease-in-out,
+    background-position 1s ease-in-out,
+    color 0.8s 0.2s ease-out;
+}
+.overlay {
+    padding: 2rem 10rem;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    
+    transition: 
+    opacity 1s ease-in-out;
+}
+
+.forest:hover {
+    background-size: 200%;
+    background-position: 0% 50%;
+}
+
+.forest:hover .overlay{ 
+    opacity: 1;    
+}
+
+.forest-text {
+    line-height: 1.2rem;
+    margin-top: 1rem;
+}
+
+/*light-cyan: #e0fffe;
+offset: #007f7b
+grey: #707f7f;*/
+
+/*** Hover Buttons Section ***/
+
+/* #1 */
+#outline-btn {
+    color: #007F7B;
+    background-color: transparent;
+    border: 1px solid #007F7B;
+    transition: 
+        color 0.4s ease-in-out,
+        background-color 0.4s ease-in-out;
+}
+
+#outline-btn:hover {
+    color: #e0fffe;
+    background-color: #007F7B;
+}
+
+/* #2 */
+#btm-right-corner {
+    color: #007F7B;
+}
+
+#btm-right-corner:hover {
+    cursor: pointer;
+}
+
+.rel {
+    padding: 1rem 1.5rem;
+}
+#btm-right-corner .line {
+    background-color: #007F7B;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.btm-line {
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 1px;
+    
+    transition: 
+        width 0.4s ease-in-out;
+}
+#btm-right-corner:hover .btm-line {
+    width: 100%;
+    height: 1px;
+}
+.right-line {
+    height: 0%;
+    width: 1px;
+
+    transition: 
+        height 0.4s ease-in-out;
+}
+#btm-right-corner:hover .right-line {
+    height: 100%;
+    width: 1px;
+}
+
+/* #3 */
+#top-btm-lines {
+    color: #007F7B;
+
+    transition: 
+    letter-spacing 0.4s ease-in-out;
+}
+
+#top-btm-lines:hover {
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+.top-line {
+    top: 0;
+    left: 0;
+}
+.btm-line {
+    bottom: 0;
+    right: 0;
+}
+
+#top-btm-lines .line {
+    position: absolute;
+    height: 1px;
+    width: 0%;
+    background-color: #007F7B;
+
+    transition:
+        width 0.4s ease-in-out;
+}
+
+#top-btm-lines:hover .line {
+    width: 100%;
+}

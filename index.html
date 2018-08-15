@@ -9,10 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
 </head>
 
 <body>
-<header class="gradient text-center">
+<header class="gradient text-center hidden">
   <h1>An(t)imations: Quick & Dirty</h1>
 </header>
 
@@ -21,7 +22,7 @@
   Maybe a Brief explanation here... 
 </section>-->
 
-<section class="container forest">
+<section class="container forest round-corners hidden">
   <div class="overlay">
     <h3 class="text-center forest-header">Plane Stolen in Seattle</h3>
     <p class="text-center forest-text">
@@ -33,16 +34,34 @@
     </p>
   </div>
 </section>
-  <!--<script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>-->
-  
-  <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <!--<script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>-->
-  <!--<script src="https://www.google-analytics.com/analytics.js" async defer></script>-->
+<section class="container round-corners light-cyan">
+<!--<h2>Peanut Butter Button Time</h2>-->
+<!-- Maybe add gradient to title / this section too -->
+<div id="outline-btn" class="btn">
+  Hover Me!
+</div>
+
+<div id="btm-right-corner" class="btn">
+  <div class="rel">
+    Hover Me!
+    <div class="btm-line line"></div>
+    <div class="right-line line"></div>
+  </div>
+</div>
+
+<div id="top-btm-lines" class="btn">
+  <div class="rel">
+    <div class="top-line line"></div>
+    Hover Me!
+    <div class="btm-line line"></div>
+  </div>
+</div>
+
+</section>
+  
+  <!--<script src="js/main.js"></script>-->
+
 </body>
 
 </html>
