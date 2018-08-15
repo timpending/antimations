@@ -159,3 +159,53 @@ grey: #707f7f;*/
 #top-btm-lines:hover .line {
     width: 100%;
 }
+
+
+/* #4 */
+#corners {
+    color: #007F7B;
+}
+#corners .line {
+    background-color: #007F7B;
+    position: absolute;
+
+    transition: 
+        height 0.4s ease-in-out,
+        width 0.4s ease-in-out;
+}
+.top {
+    top: 0;
+    right:0;
+    width: 15%;
+    height: 1px;
+}
+#corners:hover .top {
+    width: 115%;
+}
+.right {
+    top: 0;
+    right:0;
+    width: 1px;
+    height: 15%;
+}
+#corners:hover .right {
+    height: 115%;
+}
+.btm {
+    bottom: 0;
+    left:0;
+    width: 15%;
+    height: 1px;
+}
+#corners:hover .btm {
+    width: 110%;
+}
+.left {
+    bottom: 0;
+    left:0;
+    width: 1px;
+    height: 15%;
+}
+#corners:hover .left {
+    height: 115%;
+}
