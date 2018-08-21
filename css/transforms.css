@@ -35,3 +35,18 @@
 #rotate img:hover {
     transform:  scale(1.7) rotate(25deg); 
 }
+
+#zoom.card-container {
+    overflow: hidden;
+}
+
+#zoom img {
+    transform-origin: top left;
+    transition:
+        transform 0.4s ease;
+}
+
+#zoom img:hover {
+    transform:  scale(1.4);
+    /* start at top left */
+}
