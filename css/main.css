@@ -39,6 +39,10 @@ header {
     height: auto;
 }
 
+.center {
+    margin: 0 auto;
+}
+
 .light-cyan {
     background-color: #E0FFFE;
 }
@@ -73,4 +77,3 @@ header {
 .btn:hover {
     cursor: pointer;
 }
-
