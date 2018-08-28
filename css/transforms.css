@@ -50,3 +50,52 @@
     transform:  scale(1.4);
     /* start at top left */
 }
+
+#zoom-blur.card-container {
+    overflow: hidden;
+}
+#zoom-blur img {
+    transform-origin: 30% 50%;
+    transition:
+        filter 0.4s ease,
+        transform 0.4s ease;
+}
+
+#zoom-blur img:hover {
+    transform:  scale(2);
+    filter: blur(5px);
+}
+
+#bw-rotate.card-container {
+    overflow: hidden;
+}
+
+#bw-rotate img {
+    transition: 
+        filter 0.4s ease,
+        transform 0.4s ease;
+}
+#bw-rotate img:hover{
+    transform: scale(2.5) rotate(30deg);
+    filter: grayscale(100%);
+}
+.skew-section {
+    width: 80%;
+    margin: 0 auto;
+}
+.skew-container {
+    color: white;
+}
+.skew-container .even {
+    transform: skewX(-10deg);
+    background-color: #007F7B;
+    border: 2px solid white;
+} 
+.skew-container p {
+    padding: 1.5rem 1.5rem;
+    font-size: 0.8rem;
+
+}
+.skew-container .even p {
+    transform: skewX(10deg);
+}
